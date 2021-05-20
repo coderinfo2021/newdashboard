@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="CSS/all.css">
+    <!-- <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> -->
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+    <!-- nav bar and side bar starts -->
+    <header>
+        <nav class="navbar">
+            <div class="hamburgar">
+              <h2 class="ham">
+                <i class="fas fa-bars"></i>
+              </h2>
+            </div>
+            <div class="nav-text">
+                <h2>Hi, champion!</h2>
+            </div>
+        </nav>
+    </header>
+    <aside class="sidebar">
+        <div class="cross">
+            <h3>
+            <i class="fas fa-times"></i>
+            </h3>           
+        </div>
+        <ul class="sidebar-items">
+            <li>
+                <a href="#">Home</a>
+            </li>
+            <li>
+                <a href="#">Dashboard</a>
+            </li>
+            <li>
+                <a href="Course.html">My Courses</a>
+            </li>
+            <li>
+                <a href="#">Achievements</a>
+            </li>
+            <li>
+                <a href="#">Forum</a>
+            </li>
+        </ul>
+    </aside>
+    <!-- nav bar and side bar ends -->
+    <section class="parent-container">
+    <!-- upcoming lessons -->
+    <article class="up-lessons">
+        <h2>Upcoming lessons</h2>
+        <div class="lesson-detail">
+        </div>
+    </article>
+
+    <!-- Tasks -->
+    <article class="all-task">
+        <h2>Tasks</h2>
+        <div class="task-container">
+       </div>
+       <button class="task-btn-second">See All Tasks</button>
+    </article>
+
+    <!-- Leader board -->
+    <article class="leader-board">
+        <div class="leader-head">
+            <h2>Leaderboard</h2>
+            <form>
+                <select class="english">
+                    <option >English</option>
+                    <option>Math</option>
+                    <option>Science</option>
+                </select>
+            </form>
+        </div>
+        <div class="table-container">
+          <table class="table-rows">
+           
+          </table>
+        </div>
+
+    </article>
+
+    <!-- Goals -->
+    <article class="leader-board" id="goal-board">
+        <div class="leader-head">
+            <h2>Goals</h2>
+            <form>
+                <select>
+                    <option>Daily</option>
+                    <option>Weekly</option>
+                    <option>Monthly</option>
+                </select>
+            </form>
+        </div>
+     
+
+       <div class="box">
+           <div class="percent">
+               <svg>
+                   <circle cx="30" cy="30" r="30"></circle>
+                   <circle cx="30" cy="30" r="30"></circle>
+                </svg>
+                <div class="number">
+                    <h2>87<span>%</span></h2>
+                </div>
+
+           </div>
+       </div>
+       <div class="goal-option">
+           <input type="radio" id="complete" name="goal"/>
+           <label for="complete">Completed</label><br/>
+            <input type="radio" id="uncomplete" name="goal" />
+            <label for="uncomplete">Uncompleted</label>
+        </div>
+        
+
+    </article>
+    </section>
+ 
+    <script src="./script.js"></script>
+</body>
+</html>
